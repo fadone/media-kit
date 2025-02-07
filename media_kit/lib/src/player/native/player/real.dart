@@ -365,6 +365,7 @@ class NativePlayer extends PlatformPlayer {
       }
 
       isPlayingStateChangeAllowed = true;
+      isBufferingStateChangeAllowed = false;
       await _setPropertyFlag('pause', true);
     }
 
