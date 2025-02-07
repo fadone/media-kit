@@ -591,7 +591,7 @@ class _MaterialVideoControlsState extends State<_MaterialVideoControls> {
                   });
 
                   _timer?.cancel();
-                  _timer = Timer(_theme(context).controlsHoverDuration, () {
+                  _timer = Timer(const Duration(milliseconds: 125), () {
                     if (mounted) {
                       setState(() {
                         visible = false;
